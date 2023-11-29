@@ -73,3 +73,7 @@ button {
     font-weight: 600;
     color: #292929;
 }
+
+button:active {
+    color: grey;
+}
