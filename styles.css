@@ -52,7 +52,7 @@ h2 {
     color: white;
     background: black;
     border-radius: 8px;
-    font-size: 3rem;
+    font-size: 3.2rem;
 }
 
 .color {
@@ -67,6 +67,7 @@ button {
     width: 30%;
     height: 50px;
     border-radius: 7px;
+    /* Used display: block, and gave it a width as percentage to center the button */
     display: block;
     font-size: 1.5rem;
     letter-spacing: 3px;
@@ -75,5 +76,5 @@ button {
 }
 
 button:active {
-    color: grey;
+    color: rgb(174, 174, 174);
 }
