@@ -6,10 +6,17 @@ const btn = document.getElementById('btn');
 const color = document.querySelector('.color');
 
 btn.addEventListener('click', () => {
-let hexColor = '#';
-for (let i = 0; i < 6; i++) {
-    hexColor += hex[0];
+    let hexColor = '#';
+    for (let i = 0; i < 6; i++) {
+        hexColor += hex[getRandomNumber()];
+    }
+
+    color.textContent = hexColor;
+    document.body.style.backgroundColor = hexColor;
+});
+
+function getRandomNumber() {
+    /* Make sure to multiply by length of array and not multiply by the numbers */
+    return Math.floor(Math.random() * hex.length);
 }
-color.textContent = hexColor
-})
 
